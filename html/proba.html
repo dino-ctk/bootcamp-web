@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>CSS Cascade</title>
+  <link rel="stylesheet" href="./style.css">
+
+  <style>
+    #outer-box{
+        background-color: purple;
+    }
+    .box
+    {
+        padding: 10px;
+        background-color: blue;
+    }
+    .inner-box{
+        background-color: red;
+    }
+    p{
+        margin: 0;
+        color: yellow;
+    }
+    .inner-box  p{
+        color: white;
+    }
+
+    ul > p{
+        color: green;
+    }
+
+    ul p.poseban{
+        color: aqua;
+    }
+
+
+  </style>
+</head>
+
+<body>
+    <ul>
+        <p>sadfd</p>
+        <p>sadfd</p>
+        <p class="poseban">sadfd</p>
+        <p>sadfd</p>
+    </ul>
+
+
+  <div id="outer-box" class="box">
+    <div class="box">
+      <p>Yellow Text</p>
+      <div class="box inner-box">
+        <p>White Text</p>
+        <p>White Text</p>
+        <h2>Nesto</h2>
+        <h2>drugi</h2>
+        <div>
+            <p >neki</p>
+        </div>
+      </div>
+    </div>
+    <div class="box">
+      <p>Yellow Text</p>
+      <div class="box inner-box">
+        <p>White Text</p>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
